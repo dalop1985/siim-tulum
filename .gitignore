@@ -1,0 +1,65 @@
+# ─── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# ─── Entornos y secretos ──────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# ─── Node / Frontend ──────────────────────────────────────
+node_modules/
+dist/
+build/
+.next/
+.turbo/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ─── Base de datos / SQL Server ───────────────────────────
+*.mdf
+*.ldf
+*.bak
+*.trn
+*.dump
+
+# ─── PDFs y archivos generados ────────────────────────────
+*.tmp
+/tmp/
+uploads/
+media/
+
+# ─── IDE / Editor ─────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ─── Docker ───────────────────────────────────────────────
+docker-compose.override.yml
+
+# ─── Logs ─────────────────────────────────────────────────
+*.log
+logs/
