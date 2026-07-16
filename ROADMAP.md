@@ -83,6 +83,20 @@ método obtener_estado_fiscal() para alimentar el CRI.
 
 ---
 
+## Módulos de colaboración (definidos en el diseño v5 del panel)
+
+Herramientas de trabajo diario del personal, en la sección "Principal" del menú.
+
+| Módulo | Qué es | Necesita en backend | Estado |
+|---|---|---|---|
+| Chat interno | Mensajería entre personal del ayuntamiento | WebSockets + tablas de mensajes | Por diseñar |
+| Timeline | Línea de tiempo de eventos del sistema | Vistas sobre auditoría | Por diseñar |
+| Kanban | Tablero de tareas por área | Tablas de tareas/columnas | Por diseñar |
+| Notificaciones | Centro de avisos (vencimientos, asignaciones) | Tabla de notificaciones + triggers | Por diseñar |
+| Analítica | Dashboards ejecutivos ampliados | SP del dashboard (ya especificados) | Parcial en spec |
+
+---
+
 ## Orden de construcción recomendado
 
 ```
