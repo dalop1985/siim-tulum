@@ -18,14 +18,14 @@ y el **código SQL** del proyecto.
 |---|---|
 | Backend API | Python 3.11+ / FastAPI 0.110+ |
 | ORM | SQLAlchemy 2.x (async) |
-| Base de datos | Microsoft SQL Server 2019/2022 |
+| Base de datos | PostgreSQL 14+ |
 | Migraciones | Alembic |
 | Validación | Pydantic v2 |
 | Autenticación | JWT (python-jose) + OAuth2 |
 | Permisos | RBAC propio |
 | Task Queue | Celery + Redis |
-| Frontend | React 18 + TypeScript |
-| Estado FE | Zustand / TanStack Query v5 |
+| Frontend | SvelteKit (Svelte 5) |
+| Estado FE | Svelte stores / TanStack Query |
 | PDF | WeasyPrint |
 | Testing | pytest + pytest-asyncio + httpx |
 | Contenedores | Docker + docker-compose |
@@ -35,14 +35,14 @@ y el **código SQL** del proyecto.
 ## Arquitectura de microservicios
 
 ```
-FRONTEND (React + TS)
+FRONTEND (Svelte + TS)
         | HTTP/REST (OpenAPI)
 API GATEWAY (FastAPI, puerto 8000)
         |
    +----+----+---------+------------+----------+
  ms_core  ms_caja  ms_predial  ms_licencias  ms_*
         |
-   SQL Server — Schemas: core / caja / catalogos /
+   PostgreSQL — Schemas: core / caja / catalogos /
                 predial / licencias / isabi / auditoria
 ```
 
@@ -90,4 +90,4 @@ siim-tulum/
 1. Lee `ESTADO_DEL_PROYECTO.md` para el panorama completo.
 2. La especificación maestra (`docs/PROMPT_MAESTRO_SIIM_UNIFICADO.md`) está
    organizada en fases; cada fase depende de la anterior.
-3. El código SQL de `database/` ya es ejecutable sobre una BD nueva de SQL Server.
+3. El código SQL de `database/` ya es ejecutable sobre una BD nueva de PostgreSQL.

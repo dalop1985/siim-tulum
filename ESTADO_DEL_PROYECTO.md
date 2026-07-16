@@ -15,9 +15,9 @@ pieza, y qué falta por construir. Úsalo como punto de partida.
 |---|---|
 | Especificación técnica (arquitectura, DDL, endpoints, lógica) | RECUPERADA casi íntegra |
 | Marco legal y guías jurídicas | RECUPERADO (3 guías) |
-| Código SQL implementado (ISABI + clasificador CONAC) | RECUPERADO y ejecutable |
+| Código SQL implementado (ISABI + clasificador CONAC) | RECUPERADO (T-SQL, pendiente portar a PostgreSQL) |
 | Backend Python / FastAPI (código real) | NO presente en esta carpeta |
-| Frontend React / TypeScript | NO presente en esta carpeta |
+| Frontend Svelte / TypeScript | NO presente en esta carpeta |
 | Migraciones Alembic | Pendiente |
 | Docker / docker-compose | Pendiente |
 | Tests (pytest) | Pendiente (era lo último en lo que se trabajaba) |
@@ -95,6 +95,8 @@ estar en otras conversaciones o ser el trabajo aún por generar.
 ## 5. Qué verificar (para no dar nada por sentado)
 
 - [ ] Confirmar si existe código Python/FastAPI en otras conversaciones o carpetas.
-- [ ] Confirmar si existe la plantilla de frontend React mencionada en la spec.
-- [ ] Validar que los scripts SQL corren sin error sobre una BD nueva de SQL Server.
+- [ ] Confirmar si existe la plantilla de frontend Svelte mencionada en la spec.
+- [ ] Validar que los scripts SQL corren sin error sobre una BD nueva de PostgreSQL.
 - [ ] Revisar si hay más artefactos (diagramas, .env de ejemplo, seeds) en otras conversaciones.
+
+- [ ] Portar ISABI y el clasificador CONAC de T-SQL (SQL Server) a PostgreSQL.
